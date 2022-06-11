@@ -44,7 +44,19 @@ let names = prompt("Enter your name");
 let edad = prompt("Enter years");
 let years = prompt("Enter in years");
 
-edad = parseInt(edad);
+ageOld = parseInt(edad);
 years = parseInt(years);
 
-alert("Your name is: "+names+", your age is: "+edad+" and in "+years+" years, you are going to have "+(edad+years)+" years");
+alert(`Your name is: ${names}, your age is: ${ageOld} and in years, you are going to have ${ageOld+years} years`);
+
+let product = prompt ("Enter price of product");
+let porcentage = prompt ("What is the porcentage of IVA?");
+
+product = parseFloat(product);
+porcentage = parseFloat(porcentage);
+
+let iva = (product * porcentage)/100;
+
+let resultEnd = product+iva;
+
+alert(`The end result is: ${resultEnd}`);
